@@ -1,0 +1,839 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7543596575741103970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db920e62f70f420bb33c771449926fa4, type: 3}
+  m_Name: Dialogue-1-Linear
+  m_EditorClassIdentifier: 
+  Graphs:
+  - rid: 4917470288093381415
+  RootGraph:
+    rid: 4917470288093381415
+  m_DebugInfo: {fileID: 8057590462483309140}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4917470288093381276
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Hello Pal!
+    - rid: 4917470288093381279
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Hello there!
+    - rid: 4917470288093381414
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Good Bye
+    - rid: 4917470288093381415
+      type: {class: BehaviorGraphModule, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        AuthoringAssetID:
+          m_Value0: 14127414162877379485
+          m_Value1: 12629355369615313131
+        m_DebugInfo: {fileID: 0}
+        BlackboardReference:
+          rid: 4917470288093381416
+        BlackboardGroupReferences: []
+        Root:
+          rid: 4917470288093381417
+        m_ActiveNodes: []
+        m_NodesToTick: []
+        m_NodesToEnd:
+          rid: 4917470288093381418
+        m_EndedNodes:
+          rid: 4917470288093381419
+        m_VersionTimestamp: 638850045817734609
+    - rid: 4917470288093381416
+      type: {class: BlackboardReference, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Blackboard:
+          rid: 4917470288093381420
+        m_Source: {fileID: 1992371654457879480}
+    - rid: 4917470288093381417
+      type: {class: Start, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 8367643411667038202
+          m_Value1: 7654793585895720620
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: -2
+        m_Child:
+          rid: 4917470288093381421
+        Repeat: 0
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 4917470288093381418
+      type: {class: 'Stack`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic, asm: mscorlib}
+      data: 
+    - rid: 4917470288093381419
+      type: {class: 'HashSet`1[[Unity.Behavior.Node, Unity.Behavior]]', ns: System.Collections.Generic, asm: System.Core}
+      data: 
+    - rid: 4917470288093381420
+      type: {class: Blackboard, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        m_Variables:
+        - rid: 4917470288093381422
+        - rid: 4917470288093381423
+        - rid: 4917470288093381424
+    - rid: 4917470288093381421
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 7015598086523163891
+          m_Value1: 199666809831264455
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: 4917470288093381417
+        m_Children:
+        - rid: 4917470288093381425
+        - rid: 4917470288093381426
+    - rid: 4917470288093381422
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 4917470288093381423
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 4200977988739280689
+          m_Value1: 9193921237787536254
+        Name: Player
+        m_Value: {fileID: 11400000, guid: 23de3d40ab7f14a4b89d9c633ddb7ab1, type: 2}
+    - rid: 4917470288093381424
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 362442737894659330
+          m_Value1: 4794010997077774172
+        Name: Merchant
+        m_Value: {fileID: 11400000, guid: 6fef5b205beba614a92da9e12250f371, type: 2}
+    - rid: 4917470288093381425
+      type: {class: SimpleSayAction, ns: FlatCoaster.Systems.DialogueSystem, asm: FlatCoaster.Systems.DialogueSystem}
+      data:
+        ID:
+          m_Value0: 7015598086523163891
+          m_Value1: 199666809831264455
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: 4917470288093381421
+        Actor:
+          rid: 4917470288093381423
+        Sentence:
+          rid: 4917470288093381276
+    - rid: 4917470288093381426
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 9327274399259031403
+          m_Value1: 16921165295092524496
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: 4917470288093381421
+        m_Children:
+        - rid: 4917470288093381427
+        - rid: 4917470288093381428
+    - rid: 4917470288093381427
+      type: {class: SimpleSayAction, ns: FlatCoaster.Systems.DialogueSystem, asm: FlatCoaster.Systems.DialogueSystem}
+      data:
+        ID:
+          m_Value0: 9327274399259031403
+          m_Value1: 16921165295092524496
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: 4917470288093381426
+        Actor:
+          rid: 4917470288093381424
+        Sentence:
+          rid: 4917470288093381279
+    - rid: 4917470288093381428
+      type: {class: SequenceComposite, ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        ID:
+          m_Value0: 16337142926867511966
+          m_Value1: 1676687383657954830
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: 4917470288093381426
+        m_Children:
+        - rid: 4917470288093381429
+        - rid: 4917470288093381430
+    - rid: 4917470288093381429
+      type: {class: SimpleSayAction, ns: FlatCoaster.Systems.DialogueSystem, asm: FlatCoaster.Systems.DialogueSystem}
+      data:
+        ID:
+          m_Value0: 16337142926867511966
+          m_Value1: 1676687383657954830
+        Graph:
+          rid: 4917470288093381415
+        m_Parent:
+          rid: 4917470288093381428
+        Actor:
+          rid: 4917470288093381423
+        Sentence:
+          rid: 4917470288093381414
+    - rid: 4917470288093381430
+      type: {class: EndDialogueSequence, ns: , asm: FlatCoaster.Systems.DialogueSystem}
+      data:
+        ID:
+          m_Value0: 12586158937039635798
+          m_Value1: 17300959816682044699
+        Graph:
+          rid: 4917470288093381415
+        m_Parents:
+        - rid: 4917470288093381428
+        m_Child:
+          rid: -2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad8f2220607dac4db5082ff333fafb8, type: 3}
+  m_Name: Dialogue-1-Linear
+  m_EditorClassIdentifier: 
+  Blackboard: {fileID: 4905940741937747258}
+  m_Description: 
+  m_Nodes:
+  - rid: 4917470285193281785
+  - rid: 4917470285857030348
+  - rid: 4917470285857030410
+  - rid: 4917470288093381166
+  - rid: 4917470288093381310
+  m_VersionTimestamp: 638850045817734609
+  m_DebugInfo: {fileID: 8057590462483309140}
+  m_RuntimeGraph: {fileID: -7543596575741103970}
+  AssetID:
+    m_Value0: 14127414162877379485
+    m_Value1: 12629355369615313131
+  Story:
+    Story: 
+    StoryVariableNames: []
+    Variables: []
+  m_NodeModelsInfo:
+  - Name: On Start
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 3335272451348827663
+      m_Value1: 11549843281177505721
+    Variables: []
+    NamedChildren: []
+  - Name: SimpleSay
+    Story: '[Actor] says [Sentence]'
+    RuntimeTypeID:
+      m_Value0: 17922590512724315514
+      m_Value1: 647109324947565152
+    Variables:
+    - Name: Actor
+      Type:
+        m_SerializableType: FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: Sentence
+      Type:
+        m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    NamedChildren: []
+  - Name: EndDialogue
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 34391513508158825
+      m_Value1: 8475858267340495246
+    Variables: []
+    NamedChildren: []
+  - Name: SayOptions
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 2808243477081846659
+      m_Value1: 7396584363322188001
+    Variables: []
+    NamedChildren: []
+  - Name: Wait For Any
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 3335272451348827839
+      m_Value1: 11621900875215433657
+    Variables: []
+    NamedChildren: []
+  - Name: EndDialogue
+    Story: End Dialogue
+    RuntimeTypeID:
+      m_Value0: 6371381004506445346
+      m_Value1: 16868247942694785188
+    Variables: []
+    NamedChildren: []
+  - Name: Random
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 15586748977048568638
+      m_Value1: 1886799870276249994
+    Variables: []
+    NamedChildren: []
+  - Name: Conditional Branch
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 12334964803190848789
+      m_Value1: 14608808926743427008
+    Variables: []
+    NamedChildren:
+    - True
+    - False
+  - Name: Switch
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 7697158487413557231
+      m_Value1: 14836087705204215232
+    Variables:
+    - Name: EnumVariable
+      Type:
+        m_SerializableType: Unity.Behavior.BlackboardVariable, Unity.Behavior, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+  - Name: Sequence
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 10181448252506100447
+      m_Value1: 8737116843063128493
+    Variables: []
+    NamedChildren: []
+  - Name: Conditional Guard
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 10845871997924083670
+      m_Value1: 4041440894818793834
+    Variables: []
+    NamedChildren: []
+  - Name: SayOption
+    Story: Actor Choose What To Say
+    RuntimeTypeID:
+      m_Value0: 7551118019439441287
+      m_Value1: 2731896597608641544
+    Variables: []
+    NamedChildren: []
+  - Name: SimpleSay
+    Story: '[Actor] says [Sentence]'
+    RuntimeTypeID:
+      m_Value0: 8637411163626915446
+      m_Value1: 4661029874396037068
+    Variables:
+    - Name: Actor
+      Type:
+        m_SerializableType: FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    - Name: Sentence
+      Type:
+        m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089
+      Tooltip: 
+    NamedChildren: []
+  - Name: Send Event Message
+    Story: 
+    RuntimeTypeID:
+      m_Value0: 9965463903622711961
+      m_Value1: 5344335246459382461
+    Variables:
+    - Name: ChannelVariable
+      Type:
+        m_SerializableType: Unity.Behavior.BlackboardVariable, Unity.Behavior, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      Tooltip: 
+    NamedChildren: []
+  m_Blackboards: []
+  m_MainBlackboardAuthoringAsset: {fileID: 4905940741937747258}
+  m_CommandBuffer:
+    m_Commands: []
+  m_SubgraphsInfo: []
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 4917470285193281785
+      type: {class: StartNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 0}
+        ID:
+          m_Value0: 8367643411667038202
+          m_Value1: 7654793585895720620
+        Parents: []
+        PortModels:
+        - rid: 4917470285193281786
+        NodeType:
+          m_SerializableType: Unity.Behavior.Start, Unity.Behavior, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 3335272451348827663
+          m_Value1: 11549843281177505721
+        m_FieldValues: []
+        Repeat: 0
+        AllowMultipleRepeatsPerTick: 0
+    - rid: 4917470285193281786
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470285193281785
+        m_Connections:
+        - rid: 4917470285857030349
+    - rid: 4917470285857030348
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 103}
+        ID:
+          m_Value0: 7015598086523163891
+          m_Value1: 199666809831264455
+        Parents: []
+        PortModels:
+        - rid: 4917470285857030349
+        - rid: 4917470285857030350
+        NodeType:
+          m_SerializableType: FlatCoaster.Systems.DialogueSystem.SimpleSayAction,
+            FlatCoaster.Systems.DialogueSystem, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 17922590512724315514
+          m_Value1: 647109324947565152
+        m_FieldValues:
+        - rid: 4917470285857030351
+        - rid: 4917470285857030352
+    - rid: 4917470285857030349
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470285857030348
+        m_Connections:
+        - rid: 4917470285193281786
+    - rid: 4917470285857030350
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470285857030348
+        m_Connections:
+        - rid: 4917470285857030411
+    - rid: 4917470285857030351
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Actor
+        Type:
+          m_SerializableType: FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 4917470285857030353
+        LinkedVariable:
+          rid: 4917470285857030739
+    - rid: 4917470285857030352
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Sentence
+        Type:
+          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 4917470285857030354
+        LinkedVariable:
+          rid: -2
+    - rid: 4917470285857030353
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 4917470285857030354
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Hello Pal!
+    - rid: 4917470285857030410
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 191}
+        ID:
+          m_Value0: 9327274399259031403
+          m_Value1: 16921165295092524496
+        Parents: []
+        PortModels:
+        - rid: 4917470285857030411
+        - rid: 4917470285857030412
+        NodeType:
+          m_SerializableType: FlatCoaster.Systems.DialogueSystem.SimpleSayAction,
+            FlatCoaster.Systems.DialogueSystem, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 17922590512724315514
+          m_Value1: 647109324947565152
+        m_FieldValues:
+        - rid: 4917470285857030413
+        - rid: 4917470285857030414
+    - rid: 4917470285857030411
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470285857030410
+        m_Connections:
+        - rid: 4917470285857030350
+    - rid: 4917470285857030412
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470285857030410
+        m_Connections:
+        - rid: 4917470288093381311
+    - rid: 4917470285857030413
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Actor
+        Type:
+          m_SerializableType: FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 4917470285857030416
+        LinkedVariable:
+          rid: 4917470288093381295
+    - rid: 4917470285857030414
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Sentence
+        Type:
+          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 4917470285857030417
+        LinkedVariable:
+          rid: -2
+    - rid: 4917470285857030416
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 4917470285857030417
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Hello there!
+    - rid: 4917470285857030739
+      type: {class: 'TypedVariableModel`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 4200977988739280689
+          m_Value1: 9193921237787536254
+        Name: Player
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 11400000, guid: 23de3d40ab7f14a4b89d9c633ddb7ab1, type: 2}
+    - rid: 4917470288093381166
+      type: {class: JoinNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 367}
+        ID:
+          m_Value0: 12586158937039635798
+          m_Value1: 17300959816682044699
+        Parents: []
+        PortModels:
+        - rid: 4917470288093381167
+        - rid: 4917470288093381168
+        NodeType:
+          m_SerializableType: EndDialogueSequence, FlatCoaster.Systems.DialogueSystem,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 34391513508158825
+          m_Value1: 8475858267340495246
+        m_FieldValues: []
+    - rid: 4917470288093381167
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470288093381166
+        m_Connections:
+        - rid: 4917470288093381312
+    - rid: 4917470288093381168
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470288093381166
+        m_Connections: []
+    - rid: 4917470288093381295
+      type: {class: 'TypedVariableModel`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 362442737894659330
+          m_Value1: 4794010997077774172
+        Name: Merchant
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 11400000, guid: 6fef5b205beba614a92da9e12250f371, type: 2}
+    - rid: 4917470288093381310
+      type: {class: ActionNodeModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        Position: {x: 0, y: 279}
+        ID:
+          m_Value0: 16337142926867511966
+          m_Value1: 1676687383657954830
+        Parents: []
+        PortModels:
+        - rid: 4917470288093381311
+        - rid: 4917470288093381312
+        NodeType:
+          m_SerializableType: FlatCoaster.Systems.DialogueSystem.SimpleSayAction,
+            FlatCoaster.Systems.DialogueSystem, Version=0.0.0.0, Culture=neutral,
+            PublicKeyToken=null
+        NodeTypeID:
+          m_Value0: 17922590512724315514
+          m_Value1: 647109324947565152
+        m_FieldValues:
+        - rid: 4917470288093381313
+        - rid: 4917470288093381314
+    - rid: 4917470288093381311
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: InputPort
+        m_PortDataFlowType: 0
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470288093381310
+        m_Connections:
+        - rid: 4917470285857030412
+    - rid: 4917470288093381312
+      type: {class: PortModel, ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        m_Name: OutputPort
+        m_PortDataFlowType: 1
+        m_IsFloating: 0
+        m_NodeModel:
+          rid: 4917470288093381310
+        m_Connections:
+        - rid: 4917470288093381167
+    - rid: 4917470288093381313
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Actor
+        Type:
+          m_SerializableType: FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem,
+            Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        LocalValue:
+          rid: 4917470288093381315
+        LinkedVariable:
+          rid: 4917470288093381345
+    - rid: 4917470288093381314
+      type: {class: BehaviorGraphNodeModel/FieldModel, ns: Unity.Behavior, asm: Unity.Behavior.Authoring}
+      data:
+        FieldName: Sentence
+        Type:
+          m_SerializableType: System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+            PublicKeyToken=b77a5c561934e089
+        LocalValue:
+          rid: 4917470288093381316
+        LinkedVariable:
+          rid: -2
+    - rid: 4917470288093381315
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: {fileID: 0}
+    - rid: 4917470288093381316
+      type: {class: 'BlackboardVariable`1[[System.String, mscorlib]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 0
+          m_Value1: 0
+        Name: 
+        m_Value: Good Bye
+    - rid: 4917470288093381345
+      type: {class: 'TypedVariableModel`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 4200977988739280689
+          m_Value1: 9193921237787536254
+        Name: Player
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 11400000, guid: 23de3d40ab7f14a4b89d9c633ddb7ab1, type: 2}
+--- !u!114 &1992371654457879480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02bb70996b49eba31d0c206e28da24, type: 3}
+  m_Name: Dialogue-1-Linear Blackboard
+  m_EditorClassIdentifier: 
+  VersionTimestamp: 638850045580069139
+  AssetID:
+    m_Value0: 14127414162877379485
+    m_Value1: 12629355369615313131
+  m_Blackboard:
+    m_Variables:
+    - rid: 4917470285193281795
+    - rid: 4917470285193281910
+    - rid: 4917470285193281929
+  m_SharedBlackboardVariableGuids: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 4917470285193281795
+      type: {class: 'BlackboardVariable`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        m_Value: {fileID: 0}
+    - rid: 4917470285193281910
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 4200977988739280689
+          m_Value1: 9193921237787536254
+        Name: Player
+        m_Value: {fileID: 11400000, guid: 23de3d40ab7f14a4b89d9c633ddb7ab1, type: 2}
+    - rid: 4917470285193281929
+      type: {class: 'BlackboardVariable`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior, asm: Unity.Behavior}
+      data:
+        GUID:
+          m_Value0: 362442737894659330
+          m_Value1: 4794010997077774172
+        Name: Merchant
+        m_Value: {fileID: 11400000, guid: 6fef5b205beba614a92da9e12250f371, type: 2}
+--- !u!114 &4905940741937747258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dd922ae02c94c87a66e46a10a7319b9, type: 3}
+  m_Name: Dialogue-1-Linear Blackboard
+  m_EditorClassIdentifier: 
+  AssetID:
+    m_Value0: 14127414162877379485
+    m_Value1: 12629355369615313131
+  m_Variables:
+  - rid: 4917470285193281787
+  - rid: 4917470285193281901
+  - rid: 4917470285193281919
+  m_VersionTimestamp: 638850045580069139
+  m_CommandBuffer:
+    m_Commands: []
+  m_RuntimeBlackboardAsset: {fileID: 1992371654457879480}
+  references:
+    version: 2
+    RefIds:
+    - rid: 4917470285193281787
+      type: {class: 'TypedVariableModel`1[[UnityEngine.GameObject, UnityEngine.CoreModule]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 1
+          m_Value1: 0
+        Name: Self
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 0}
+    - rid: 4917470285193281901
+      type: {class: 'TypedVariableModel`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 4200977988739280689
+          m_Value1: 9193921237787536254
+        Name: Player
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 11400000, guid: 23de3d40ab7f14a4b89d9c633ddb7ab1, type: 2}
+    - rid: 4917470285193281919
+      type: {class: 'TypedVariableModel`1[[FlatCoaster.Systems.DialogueSystem.DialogueActor, FlatCoaster.Systems.DialogueSystem]]', ns: Unity.Behavior.GraphFramework, asm: Unity.Behavior.GraphFramework}
+      data:
+        ID:
+          m_Value0: 362442737894659330
+          m_Value1: 4794010997077774172
+        Name: Merchant
+        IsExposed: 1
+        m_IsShared: 0
+        m_Value: {fileID: 11400000, guid: 6fef5b205beba614a92da9e12250f371, type: 2}
+--- !u!114 &8057590462483309140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b27bb6d9a2c8d540a10dff10acc543e, type: 3}
+  m_Name: Dialogue-1-Linear Debug Info
+  m_EditorClassIdentifier: 
+  m_CodeBreakPointsList: []
